@@ -1,0 +1,140 @@
+@import '_common_';
+
+.ix-canvas {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    padding-top: $topNavHeight+10;
+    section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+        .layer {
+            width: 200px;
+            height: 70px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            .input-field {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .node-info-panel {
+            display: none;
+            width: 600px;
+            height: 800px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: $white;
+            overflow: auto;
+            opacity: 0.9;
+            .title {
+                width: 100%;
+                height: $topNavHeight;
+                font-size: $topNavHeight*0.35;
+                line-height: $topNavHeight;
+                color: $white;
+                background: $standardBlue;
+                padding: 0 20px;
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    background-size: 100% 100% !important;
+                }
+                span:first-child {
+                    width: $topNavHeight*0.5;
+                    height: $topNavHeight*0.5;
+                    margin-top: $topNavHeight*0.3;
+                    margin-right: 5px;
+                    background: url('../resources/info.svg');
+                    float: left;
+                }
+                span:last-child {
+                    width: $topNavHeight*0.4;
+                    height: $topNavHeight*0.4;
+                    margin-top: $topNavHeight*0.35;
+                    background: url('../resources/min.svg');
+                    float: right;
+                    cursor: pointer;
+                }
+                p {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            .content {
+                width: 100%;
+                overflow-y: auto;
+                ul {
+                    margin-top: 0;
+                    border: 0;
+                    box-shadow: none;
+                }
+                li {
+                    .collapsible-header {
+                        background: $white;
+                        border-bottom: 1px solid #ccc;
+                        height: $topNavHeight;
+                        line-height: $topNavHeight;
+                        transition: 0.2s all;
+                        &:hover {
+                            background: $standardBlue;
+                            color: $white;
+                            span {
+                                background: url('../resources/company-in-white.svg');
+                                background-size: 100% 100%;
+                            }
+                        }
+                        span {
+                            display: inline-block;
+                            height: $topNavHeight*0.5;
+                            width: $topNavHeight*0.5;
+                            margin-top: $topNavHeight*0.3;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            float: left;
+                            background: url('../resources/company.svg');
+                            background-size: 100% 100%;
+                        }
+                    }
+                    .collapsible-body {
+                        h5 {
+                            text-align: center;
+                        }
+                    }
+                }
+                table {
+                    tr {
+                        border-collapse: inherit;
+                    }
+                    td {
+                        border-radius: 0;
+                        height: $topNavHeight*0.7;
+                        padding: 5px 5px;
+                    }
+                    thead {
+                        tr {
+                            background: #e3dede;
+                        }
+                    }
+                    tbody {
+                        tr {
+                            cursor: pointer;
+                            transition: 0.2s all;
+                            &:hover {
+                                background: #dddfe6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

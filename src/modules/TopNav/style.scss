@@ -1,0 +1,18 @@
+@import '_common_';
+
+.ix-top-nav {
+    width: 100%;
+    height: $topNavHeight;
+    background-color: $standardBlue;
+    position: fixed;
+    top: 0;
+    #side-nav-switch {
+        display: block;
+        float: left;
+        height: $topNavHeight*0.6;
+        width: $topNavHeight*0.6;
+        margin: $topNavHeight*0.2 20px;
+        background: url('../resources/options.svg');
+        background-size: 100% 100%;
+    }
+}

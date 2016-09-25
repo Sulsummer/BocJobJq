@@ -1,0 +1,23 @@
+[
+    {
+        "txnseqno": "50000000000",
+        "txndt": "2020-02-02",
+        "txntm": "23:00:00",
+        "txnamt": "27000.000",
+        "txncur": "CNY",
+        "draweeacntno": "420000000000",
+        "draweenm": "NAME0009000000000000000",
+        "payeeacntno": "420000000000",
+        "payeenm": "NAME0009000000000000000"
+    },{
+        "txnseqno": "50000000000",
+        "txndt": "2020-02-02",
+        "txntm": "23:00:00",
+        "txnamt": "27000.000",
+        "txncur": "CNY",
+        "draweeacntno": "420000000000",
+        "draweenm": "NAME0009000000000000000",
+        "payeeacntno": "420000000000",
+        "payeenm": "NAME0009000000000000000"
+    }
+]

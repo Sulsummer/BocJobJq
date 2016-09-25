@@ -1,0 +1,21 @@
+@import '_common_';
+
+.side-nav {
+    ul{
+        padding-top: $topNavHeight*2.5;
+        li {
+            width: 100%;
+            height: $topNavHeight;
+            padding: $topNavHeight*0.2 0;
+            padding-left: 15px;
+            font-size: $topNavHeight*0.4;
+            line-height: $topNavHeight*0.6;
+            transition: all 0.2s;
+            cursor: pointer;
+            &:hover {
+                background: $standardBlue;
+                color: $white;
+            }
+        }
+    }
+}

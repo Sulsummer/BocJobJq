@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../vendor/materialize/materialize.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="ix-container">
+        <nav class="ix-top-nav">
+            <a id="side-nav-switch" class="waves-effect waves-teal btn-flat" data-activates="slide-out"></a>
+        </nav>
+
+        <div id="slide-out" class="side-nav">
+            <ul>
+                <li class="side-nav-item" id="open-legend">结构图例</li>
+                <li class="side-nav-item">A</li>
+                <li class="side-nav-item">B</li>
+            </ul>
+        </div>
+
+        <div class="ix-canvas">
+            <section class="canvas-item">
+                <div class="zoom"></div>
+                <div class="horizon-zoom"></div>
+                <div class="vertical-zoom"></div>
+                <div class="layer">
+                    <div class="input-field">
+                        <select>
+
+                        </select>
+                        <label>第几层？</label>
+                    </div>
+                </div>
+                <div class="node-info-panel card">
+                    <div class="title">
+                        <span></span>
+                        <p>公司信息</p>
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <ul class="collapsible"></ul>
+                    </div>
+                </div>
+                <div class="node-info-panel-sub"></div>
+            </section>
+        </div>
+
+        <div class="ix-frame">
+            <div class="small-table"></div>
+            <div class="large-table"></div>
+        </div>
+
+        <div class="ix-function">
+
+        </div>
+
+        <div class="modals">
+            <div id="legend-modal" class="modal">
+                <div class="modal-content">
+                    <h4>图例</h4>
+                    <table>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../vendor/jquery.min.js"></script>
+<script src="../vendor/jquery-ui.min.js"></script>
+<script src="../vendor/d3.min.js"></script>
+<script src="../vendor/materialize/materialize.min.js"></script>
+
+<script src="modules/config.js"></script>
+<!-- modules -->
+<script src="modules/SideNav/script.js"></script>
+
+<script src="modules/TopNav/script.js"></script>
+
+<script src="modules/Canvas/script.js"></script>
+
+
+
+<script src="modules/app.js"></script>
